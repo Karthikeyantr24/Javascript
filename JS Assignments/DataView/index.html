@@ -1,0 +1,143 @@
+
+<html>
+<head>
+    <title>Data View</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="form" >
+    <fieldset style="width: 440; background-color: aquamarine;" border="3">
+            
+    <h1 style=" text-align: center; position:relative; margin-top: 2px;" >Login Form</h1>
+    
+    <form onsubmit=" return fn1()">
+        <p><label for="uname">UserName : </label> 
+        <input type="text" id="uname"  placeholder="User name" >
+        <!-- <span id="unameInvalid" class="invalid"></span> -->
+         <label id="unameInvalid">Invalid Username</label>
+         </p>
+        <p>
+        <label for="mail">Mail ID : </label>
+        <input type="email" id="mail" placeholder="Mail ID">
+        <label id="mailInvalid">Invalid Email</label>
+        </p>
+        
+        <p>
+        <label for="phone">Phone Number : </label>
+        <input type="text" id="phone" placeholder="Phone Number">
+        <label id="phoneInvalid">Invalid Phone Number</label>
+        </p>
+        <p>
+        <label for="password">Password : </label>
+        <input type="password" id="password" placeholder="Password">
+        <label id="passwordInvalid" >Invalid Password</label>
+        </p> 
+        <p>
+            <label for="gender">Gender : </label><br>
+            <input type="radio" id="mgender" name="gender" value="Male">Male <br>
+            <input type="radio" id="fgender" name="gender" value="Female">Female <br>
+            <input type="radio" id="ngender" name="gender" value="not wish to disclose">Not wish to Disclose
+            <label id="genderInvalid" >Pick one</label>
+        </p> 
+        <p>
+            <label for="address">Current Address: </label>
+            <br>
+            <textarea type="text" id="address"  placeholder="Current Address" rows="3" cols="25"></textarea>
+            <label id="addressInvalid">Invalid Address</label>
+
+        </p>
+        <p>
+            <label for="dob">Date of Birth : </label>
+            <input type="date" id="dob" >
+            <label id="dobInvalid">choose Dob</label>
+        </p> 
+        <p>
+            <label for="time">Time : </label>
+            <input type="time" id="time" name="time">
+            <label id="timeInvalid" >choose Time</label>
+        </p>
+        <p>
+            <label >Languages : </label><br>
+            <input type="checkbox"  id="lang1" value="Tamil">Tamil <br>
+            <input type="checkbox"  id="lang2" value="English">English <br>
+            <input type="checkbox"  id="lang3" value="French">French <br>
+            <label id="langInvalid" >choose Languages</label>
+        </p>
+        <p>
+            <label >Field Of Interest : </label><br>
+            <select id="int" name="interest"  size="3">
+                <option value="Badminton" name="interest">Badminton</option>
+                <option value="Cricket" name="interest" >Cricket</option>
+                <option value="Music" name="interest">Music</option>
+            </select>
+            <br>
+            <label id="intInvalid" >choose Field Of Interest</label>
+        </p> 
+        <p>
+            <label>Upload your photo : </label> <br>
+            <input type="file" id="photo" name ="photo" accept="image/jpg"> 
+            <label id="photoInvalid">Upload Photo</label>
+        </p>
+
+            <button type="submit" >Submit</button>
+    </form>
+    </fieldset>
+    </div>
+    <div id="table">
+      
+        <table border="3">
+        <tr>
+            <th>SECTION</th>
+            <th>USER DETAILS</th>
+        </tr>
+        <tr>
+            <th>USERNAME</th>
+            <td id="tdUsername"></td>
+        </tr>
+        <tr>
+            <th>EMAIL ID</th>
+            <td id="tdMail"></td>
+        </tr>
+        <tr>
+            <th>PHONE NUMBER</th>
+            <td id="tdPhone"></td>
+        </tr>
+        <tr>
+            <th>PASSWORD</th>
+            <td id="tdPassword"></td>
+        </tr>
+        <tr>
+            <th>GENDER</th>
+            <td id="tdGender"></td>
+        </tr>
+        <tr>
+            <th>CURRENT ADDRESS</th>
+            <td id="tdAddress"></td>
+        </tr>
+        <tr>
+            <th>DATE OF BIRTH</th>
+            <td id="tdDob"></td>
+        </tr>
+        <tr>
+            <th>TIME</th>
+            <td id="tdTime"></td>
+        </tr>
+        <tr>
+            <th>LANGUAGES</th>
+            <td id="tdLang"></td>
+        </tr>
+        <tr>
+            <th>FILED OF INTEREST</th>
+            <td id="tdInterest"></td>
+        </tr>
+        <tr>
+            <th>UPLOAD YOUR PICTURE</th>
+            <td id="tdPhoto"></td>
+        </tr>
+    </table>
+
+
+    </div>
+</body>
+</html>

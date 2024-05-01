@@ -1,0 +1,63 @@
+#form
+{
+    display: block;
+}
+#table
+{
+    display: none;
+}
+#unameInvalid
+{
+    visibility: hidden;
+    color: red;
+}
+#mailInvalid
+{
+    visibility: hidden;
+    color: red;
+}
+#phoneInvalid
+{
+    visibility: hidden;
+    color: red;
+}
+#passwordInvalid
+{
+    visibility: hidden;
+    color: red;
+}
+#genderInvalid
+{
+    visibility: hidden;
+    color: red;
+}
+#addressInvalid
+{
+    visibility: hidden;
+    color: red;
+}
+#dobInvalid
+{
+    visibility: hidden;
+    color: red;
+}
+#timeInvalid
+{
+    visibility: hidden;
+    color: red;
+}
+#langInvalid
+{
+    visibility: hidden;
+    color: red;
+}
+#intInvalid
+{
+    visibility: hidden;
+    color: red;
+}
+#photoInvalid
+{
+    visibility: hidden;
+    color: red;
+}
