@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Library Book</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="head">
+            <img src="C:\Users\KarthikeyanRaja\OneDrive - Syncfusion\Desktop\HelloWorld\JS Assignments\Classroom Assignment\LibraryBook\image\logo.jfif">
+            <ul>
+                <li>Library Portal</li>
+                <li style="color: rgb(55, 55, 198);">Books</li>
+            </ul>
+        </div>
+        <p id="line"></p>
+        <div class="body">
+            <div id="form" style="display: block;">
+                <form onsubmit="return fn1()">
+                <p class="add">Add New Book</p>
+                <p>
+                <label for="category">Category</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select style="width:15%;height:1.5rem;" id="category">
+                <dropdown>
+                    <option value="IT" name="option" >IT</option>
+                    <option value="CSE" name="option" >CSE</option>
+                    <option value="AI" name="option" >AI</option>
+                </dropdown>
+                 </select>
+                 <label id="invalidCategory">Invalid Category</label>
+                 </p>
+                 <p>
+                 <label for="book">Book</label>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="book" name="book">
+                 <label id="invalidBook" >Invalid Book</label>
+                 </p>
+                 <p>
+                    <label for="email">Author Email</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="email">
+                    <label id="invalidEmail">Invalid Email</label>
+                 </p>
+                 <p>
+                    <label for="name">Author Name</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="name">
+                    <label id="invalidName">Invalid Name</label>
+                 </p>
+                 <p>
+                    <label for="published">Published</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="published">
+                    <label id="invalidPublished">Invalid Year</label>
+                 </p>
+                 <p>
+                    <label for="price">Price</label>
+                    <input type="text" id="price">
+                    <label id="invalidPrice">Invalid Price</label>
+                 </p>
+                 <br>
+                 <button class="btn-sub" type="submit">Show</button>
+            </form>
+            </div>
+            <div id="table" style="display: none;">
+                <table border="2" id="tab">
+                <thead id="thd"></thead>
+                <tr>
+                    <th>Category</th>
+                    <td id="tdCategory"></td>
+                </tr>
+                <tr>
+                    <th>Book</th>
+                    <td id="tdBook"></td>
+                </tr>
+                <tr>
+                    <th>Author Email</th>
+                    <td id="tdEmail"></td>
+                </tr>
+                <tr>
+                    <th>Author</th>
+                    <td id="tdName"></td>
+                </tr>
+                <tr>
+                    <th>Published</th>
+                    <td id="tdPublished"></td>
+                </tr>
+                <tr>
+                    <th>Price</th>
+                    <td id="tdPrice"></td>
+                </tr>
+                </table>
+                
+            </div>
+        </div>
+        
+    </body>
+    <footer class="foot">
+        <p>Copyright @<span id="cpyYear"></span>-present Syncfusion</p>
+    </footer>
+</html>
